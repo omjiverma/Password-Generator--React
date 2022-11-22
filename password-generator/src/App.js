@@ -4,16 +4,27 @@ import CopyPassBtn from "./component/CopyPassBtn";
 import GenerateBtn from "./component/GenerateBtn";
 import PassLength from "./component/PassLength";
 
+const initialValues = {
+  pass: "P455W0RD",
+}
+
 function App() {
+  const [params, setParams]= useState(initialValues)
+
+  // Copy Function
+  const copyHandler = () =>{
+    var copyPassword = document.getElementById("password")
+    copyPassword.select()
+    navigator.clipboard.writeText(copyPassword.value);
+  };
   return (
     <div className="App">
       <div className="container d-flex  justify-content-center">
         <div className="col-lg-4 p-4 my-4 align-self-center" style={{background: "#505962"}}>
           <h1 className="h4 text-light text-center my-3">Password Generator</h1> 
 
-
-          <CopyPassBtn/>
-
+          {/* Copy Button */}
+          <CopyPassBtn value = {params.pass} onClick = {copyHandler}/>
 
 
           <div className="input-section">
