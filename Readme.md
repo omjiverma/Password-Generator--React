@@ -1,3 +1,66 @@
+# Password Generator - React App
+   Interactive Password Generator App Using React js and Bootstrap
+
+## Table of contents
+
+- [Password Generator - React App](#password-generator---react-app)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+      - [Desktop Screenshot](#desktop-screenshot)
+      - [Small Screen Shot](#small-screen-shot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+      - [App.js](#appjs)
+  - [Author](#author)
+
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the app depending on their device's screen size
+- Select different Parameters to generate secure password
+- Generate a new password by clicking button
+
+### Screenshot
+
+#### Desktop Screenshot 
+![](./desktop-ss.png)
+
+#### Small Screen Shot 
+![](./mobile-ss.png)
+
+### Links
+
+- Live Site URL: [Live Site URL](https://warm-bubblegum-650a0f.netlify.app/)
+
+## My process
+
+### Built with
+
+- HTML 5
+- CSS custom properties
+- Flexbox
+- [Bootswatch] (https://bootswatch.com/) - Bootswatch
+- [React](https://reactjs.org/) - JS library
+- [generate-password] (https://www.npmjs.com/package/generate-password) - JS Library
+
+
+### What I learned
+
+ - React State
+ - Using External Libraries with React
+
+To see how you can add code snippets, see below:
+
+#### App.js
+```js
 // Imported Packages
 import { useState } from "react";
 import Checkbox from "./component/Checkbox";
@@ -84,3 +147,13 @@ function App() {
 }
 
 export default App;
+
+```
+
+```css
+
+}
+```
+
+## Author
+- Linkedin - [@omjiverma](https://www.linkedin.com/in/omjiverma)
